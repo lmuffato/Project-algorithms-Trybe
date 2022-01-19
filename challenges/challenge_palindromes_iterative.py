@@ -1,2 +1,8 @@
 def is_palindrome_iterative(word):
-    """ Faça o código aqui. """
+    if word is None:
+        return False
+    elif word == reversed(word):
+        return True
+    else:
+        return False
+
