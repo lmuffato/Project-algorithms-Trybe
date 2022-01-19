@@ -5,4 +5,3 @@ def is_palindrome_iterative(word):
         return True
     else:
         return False
-
