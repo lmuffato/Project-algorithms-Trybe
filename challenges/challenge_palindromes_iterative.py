@@ -1,2 +1,12 @@
 def is_palindrome_iterative(word):
-    """ Faça o código aqui. """
+    if word == "":
+        return False
+
+    aux = ""
+
+    for item in word[::-1]:
+        aux += item
+    
+    return word == aux
+
+print(is_palindrome_iterative("ana"))
