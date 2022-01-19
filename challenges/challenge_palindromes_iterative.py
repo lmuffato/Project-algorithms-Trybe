@@ -3,7 +3,10 @@ def is_palindrome_iterative(word):
         return False
     reverse = []
     for letter in word:
-        reverse.insert(0, letter)
+        reverse.append(letter)
+
+    # Sugestão de mudança por instrutor Calos Melo
+    reverse.reverse()
 
     reversed_word = "".join(reverse)
 
