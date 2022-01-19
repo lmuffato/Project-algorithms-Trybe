@@ -8,6 +8,4 @@ def is_palindrome_iterative(word):
     # Sugestão de mudança por instrutor Calos Melo
     reverse.reverse()
 
-    reversed_word = "".join(reverse)
-
-    return True if reversed_word == word else False
+    return True if ''.join(reverse) == word else False
