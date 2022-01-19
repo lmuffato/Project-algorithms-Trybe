@@ -1,13 +1,9 @@
 def find_duplicate(nums):
     counter = {}
     for number in nums:
-        try:
-            assert isinstance(number, int)
-            assert number >= 0
-            if counter[number]:
-                return number
-        except AssertionError:
+        if not isinstance(number, int) or number < 0:
             return False
-        except KeyError:
-            counter[number] = True
+        if number in counter:
+            return number
+        counter[number] = True
     return False
