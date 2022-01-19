@@ -5,6 +5,7 @@ def initial_check(nums):
     for item in nums:
         if isinstance(item, str):
             return False
+
     return True
 
 
