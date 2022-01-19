@@ -1,8 +1,5 @@
 def is_palindrome_iterative(word):
     if len(word) == 0:
         return False
-    half_way = len(word) // 2
-    for index in range(half_way):
-        if word[index] != word[-1 - index]:
-            return False
-    return True
+    # https://stackoverflow.com/questions/31487696/most-efficient-palindrome-program-for-python
+    return word == word[::-1]
