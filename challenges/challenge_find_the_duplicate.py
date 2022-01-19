@@ -1,14 +1,19 @@
 def initial_check(nums):
     if not nums or len(nums) == 1 or type(nums) == "string":
         return False
+
+    for item in nums:
+        if isinstance(item, str):
+            return False
     return True
+
 
 def sort_nums(nums):
     try:
         nums.sort()
     except TypeError:
         return False
-    
+
     return nums
 
 
@@ -19,8 +24,6 @@ def find_duplicate(nums=None):
     sorted_nums = sort_nums(nums)
 
     for i in range(len(sorted_nums)-1):
-        if isinstance(sorted_nums[i], str):
-            break
         if sorted_nums[i] < 0:
             break
         if nums[i] == nums[i+1]:

@@ -22,4 +22,3 @@ def order(str):
 
 def is_anagram(first_string, second_string):
     return order(list(first_string)) == order(list(second_string))
-
