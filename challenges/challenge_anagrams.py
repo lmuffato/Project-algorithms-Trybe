@@ -1,6 +1,8 @@
 # me baseei na seguinte discussão do stack overflow:
 # https://stackoverflow.com/questions/13101468/python-how-to-sort-the-alphabet-in-a-list-without-sorted-functions
 def quicksort(lst):
+    if not lst:
+        return []
     return (quicksort([letter for letter in lst[1:] if letter < lst[0]])
             + [lst[0]] +
             quicksort([letter for letter in lst[1:] if letter >= lst[0]]))
