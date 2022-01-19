@@ -6,6 +6,6 @@ def study_schedule(permanence_period, target_time):
         for one_period in permanence_period:
             if not all(one_period):
                 return None
-            if one_period[0] <= target_time <= one_period[-1]:
+            if one_period[0] <= target_time <= one_period[1]:
                 count += 1
     return count
