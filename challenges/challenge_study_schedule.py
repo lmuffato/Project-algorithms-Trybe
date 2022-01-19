@@ -1,6 +1,4 @@
 def study_schedule(permanence_period, target_time):
-    if (permanence_period or target_time) == '':
-        return None
     if (target_time is None):
         return None
     else:
