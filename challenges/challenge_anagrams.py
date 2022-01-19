@@ -1,3 +1,5 @@
+# usada a estrutura de ordenação do course
+
 def sort(word, low, high):
     if len(word) == 1:
         return word
@@ -5,6 +7,7 @@ def sort(word, low, high):
         partition_index = partition(word, low, high)
         sort(word, low, partition_index - 1)
         sort(word, partition_index + 1, high)
+
 
 def partition(word, low, high):
     i = low - 1
@@ -15,6 +18,7 @@ def partition(word, low, high):
             word[i], word[j] = word[j], word[i]
     word[i + 1], word[high] = word[high], word[i + 1]
     return i + 1
+
 
 def is_anagram(first_string, second_string):
     if first_string == "" or second_string == "":
