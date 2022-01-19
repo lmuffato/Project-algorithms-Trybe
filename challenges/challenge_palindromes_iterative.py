@@ -6,7 +6,5 @@ def is_palindrome_iterative(word):
 
     for item in word[::-1]:
         aux += item
-    
-    return word == aux
 
-print(is_palindrome_iterative("ana"))
+    return word == aux
