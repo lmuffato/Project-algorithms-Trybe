@@ -9,4 +9,3 @@ def study_schedule(permanence_period, target_time):
         if horario1 <= target_time <= horario2:
             matchHorario += 1
     return matchHorario
-    
