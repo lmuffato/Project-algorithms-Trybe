@@ -1,4 +1,5 @@
 def is_anagram(first_string, second_string):
+    # go
     first_ordered = merge_and_sort(first_string)
     second_ordered = merge_and_sort(second_string)
     return first_ordered == second_ordered
