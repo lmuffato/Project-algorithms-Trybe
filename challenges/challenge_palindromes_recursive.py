@@ -1,5 +1,4 @@
 def is_palindrome_recursive(word, low_index, high_index):
-    """ Faça o código aqui. """
     if len(word) == 0:
         return False
     backwards_word = backwards(word)
