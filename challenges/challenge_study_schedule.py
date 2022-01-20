@@ -3,7 +3,7 @@ def study_schedule(permanence_period, target_time):
         max = 0
 
         for period in permanence_period:
-            if period[0] is target_time or period[1] is target_time:
+            if period[0] <= target_time and period[1] >= target_time:
                 max += 1
 
         return max
