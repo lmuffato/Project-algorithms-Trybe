@@ -8,13 +8,10 @@ def is_anagram(first_string, second_string):
     for i in range(len(first_string)):
         position = ord(first_string[i]) - ord('a')
         letters1[position] = letters1[position] + 1
-        print('c1:', letters1)
 
     for i in range(len(second_string)):
         position = ord(second_string[i]) - ord('a')
-        print('pos2:', position)
         letters2[position] = letters2[position] + 1
-        print('c2:', letters2)
 
     j = 0
     comparador = True
