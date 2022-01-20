@@ -1,7 +1,7 @@
 def quicksort(array_letters, low, high):
 
     if len(array_letters) == 1:
-        return array_letters
+        return "".join(array_letters)
 
     if low < high:
         partition_index = partition(array_letters, low, high)
@@ -37,7 +37,7 @@ def is_anagram(first_string, second_string):
     quicksort(first_string_list, 0, len(first_string_list) - 1)
     quicksort(second_string_list, 0, len(second_string_list) - 1)
 
-    if "".join(first_string_list) == "".join(second_string_list):
+    if first_string_list == second_string_list:
         return True
 
     return False
