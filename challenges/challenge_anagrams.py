@@ -7,18 +7,23 @@ from string import ascii_lowercase as letters
 
 # --> Abordagem 1 - usando um algoritmo de ordenação e algoritmo de recursão:
     # Transformar as duas strings em duas listas ordenada em ordem alfabética
-def quicksort(lista):
-    # Se não tiver lista retorna um array vazio
-    if not lista:
-        return []
-    # retorna o item para cada item na lista,
-    # excluído o primeiro elemento da lista, se o item for menor que o primeiro elemento
-    return (quicksort([item for item in lista[1:] if item < lista[0]])
-    # junta o primeiro item da lista
-        + [lista[0]] +
+
+    #  Funcionamento do quicksort:
+    # Se não for passado o parâmetro lista, retorna um array vazio.
     #  continua: retornando o item para cada item na lista,
-    # excluído o primeiro elemento da lista, se o item for >= ao que está no índice zero do array
-        quicksort([item for item in lista[1:] if item >= lista[0]])
+    # Se há retorna o item para cada item na lista,
+    # excluído o primeiro elemento da lista, chama o quicksort se o item for menor
+    # que o primeiro elemento.
+    #  Adiciona-se novamente o primeiro item da lista.
+    # Depois, excluído o primeiro elemento da lista, chama novamente o quicksort
+    #  se o item for >= ao que está no índice zero do array
+def quicksort(lista_or_str):
+    if not lista_or_str:
+        return []
+    return (quicksort([item for item in lista_or_str[1:] if item < lista_or_str[0]])
+        + [lista_or_str[0]] +
+
+        quicksort([item for item in lista_or_str[1:] if item >= lista_or_str[0]])
     )
 # Source - algoritmo quicksort:
 # https://www.delftstack.com/pt/howto/python/sort-list-alphabetically/
