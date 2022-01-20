@@ -28,8 +28,8 @@ def quicksort(lista_or_str):
 # https://www.delftstack.com/pt/howto/python/sort-list-alphabetically/
 
 # Depois iterar sobre a lista e verificar se todas as posições
-# do array possuem valores iguais
-# e tiverem o mesmo tamanho, é porque são anagramas
+# do array possuem valores iguais.
+# E se tiverem o mesmo tamanho é porque são anagramas.
 # Se tiver alguma letra diferente é false
 
 

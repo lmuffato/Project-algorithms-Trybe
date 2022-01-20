@@ -48,7 +48,7 @@ def convert_letter_to_prime(letter):
     primes_nums = []
     num = 0
     for char in letter:
-        num = binary_search(letters, 0, len(letters), char)
+        num = binary_search(letters, 0, len(letters) - 1, char)
         primes_nums.append(num)
     return primes_nums
 
