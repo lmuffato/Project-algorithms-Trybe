@@ -18,7 +18,6 @@ def aux_check(left, right, merged):
     return merged
 
 
-
 def anagrama_check(array):
     if len(array) <= 1:
         return array
@@ -31,7 +30,6 @@ def anagrama_check(array):
 
 def is_anagram(first_string, second_string):
     return anagrama_check(list(first_string)) == anagrama_check(list(second_string))
-       
 
 # first_string = "pato"
 # second_string = "topa"
