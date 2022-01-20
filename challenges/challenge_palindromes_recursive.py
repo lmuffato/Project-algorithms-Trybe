@@ -18,6 +18,8 @@ def is_palindrome_recursive_vsbeta(word, low_index, high_index):
 # Source:
 # sobre recursão e algoritmos (conceito de algoritmos recursivos):
 # https://www.ic.unicamp.br/~ripolito/peds/mc102z/material/Recursividade.PDF
+# sobre estrutura lógica de algoritmos de palindromos:
+# https://www.mygreatlearning.com/blog/palindrome-in-python/
 
 
 def is_palindrome_recursive(word, low_index, high_index):
