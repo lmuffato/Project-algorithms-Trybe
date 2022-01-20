@@ -1,5 +1,8 @@
 def is_palindrome_iterative(word):
     """ Faça o código aqui. """
+    if not word:
+        return False
+
     high_index = len(word) - 1
 
     for i in range(len(word)):
