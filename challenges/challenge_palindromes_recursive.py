@@ -14,7 +14,6 @@ def is_palindrome_recursive(word, low_index, high_index):
             return True
         return False
     return False
-
 # Source:
 # sobre recursão e algoritmos (conceito de algoritmos recursivos):
 # https://www.ic.unicamp.br/~ripolito/peds/mc102z/material/Recursividade.PDF
