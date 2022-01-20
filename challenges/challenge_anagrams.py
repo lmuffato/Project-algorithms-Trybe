@@ -1,8 +1,5 @@
 from string import ascii_lowercase as letters
 
-# Source:
-# https://educacao.uol.com.br/disciplinas/matematica/numeros-primos-veja-algoritmo-para-encontra-los.htm
-
 # Anotações para referências futuras --
 # Duas abordagens para resolver esse problema:
 
@@ -60,7 +57,8 @@ def quicksort(lista_or_str):
     # de uma lista de números.
     # Iteramos a lista de números primos gerada e
     # toda vez que o número da lista de números não for None,
-    # vamos multiplicar este número pelo valor atual guardado
+    # vamos somar (ou multiplicar, os dois jeitos funcionam)
+    # este número pelo valor atual guardado
     # nas variáveis de soma
     # (sum_one para a primeira string e sum_two para a segunda)
     # se os valores de sum_one e sum_two forem iguais,
@@ -91,7 +89,7 @@ def iterate_primes_arr(lista):
     if lista:
         for num in lista:
             if num is not None:
-                sum_nums *= num
+                sum_nums += num
     return sum_nums
 
 
@@ -116,3 +114,4 @@ def is_anagram(first_string, second_string):
 #  Para essa segunda abordagem, foram consultadas as fontes a seguir:
 # https://medium.com/@omadson/um-algoritmo-inteligente-para-descobrir-se-duas-palavras-são-ou-não-anagramas-9f4a108a63e
 # https://en.wikipedia.org/wiki/Formula_for_primes
+# https://educacao.uol.com.br/disciplinas/matematica/numeros-primos-veja-algoritmo-para-encontra-los.htm
