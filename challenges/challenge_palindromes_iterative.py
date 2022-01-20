@@ -1,6 +1,6 @@
-# Mesma lógica para reverter a string.
-# Funciona, mas ultrapassa o tempo de execução
-def test_each_char_in_word(word):
+# Mesma lógica para reverter a string,
+# faz o mesmo que o slicing mas de forma iterativa.
+def is_palindrome_iterative(word):
     key = len(word) - 1
     reverse_word = []
     if key < 0:
@@ -8,10 +8,10 @@ def test_each_char_in_word(word):
     while key > -1:
         reverse_word.append(word[key])
         key -= 1
-    return ''.join(reverse_word)
+    return word == ''.join(reverse_word)
 
 
-def is_palindrome_iterative(word):
+def is_palindrome_iterative_vsbeta(word):
     if word:
         reverse_word = word[::-1]
         if word == reverse_word:
