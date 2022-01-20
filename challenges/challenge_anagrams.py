@@ -94,8 +94,8 @@ def iterate_primes_arr(lista):
 
 
 def is_anagram(first_string, second_string):
-    sum_one = 1
-    sum_two = 1
+    sum_one = 0
+    sum_two = 0
     if first_string and second_string:
         if len(first_string) == len(second_string):
             str_one_to_prime = convert_letter_to_prime(first_string)
