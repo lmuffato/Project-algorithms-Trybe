@@ -9,4 +9,3 @@ def study_schedule(permanence_period, target_time):
         elif each_schedule[0] <= target_time <= each_schedule[1]:
             count += 1
     return count
-        
