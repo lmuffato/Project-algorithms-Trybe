@@ -17,8 +17,8 @@ from string import ascii_lowercase as letters
 # vamos somar (ou multiplicar, os dois jeitos funcionam)
 # este número pelo valor atual guardado
 # nas variáveis de soma
-# (sum_one para a primeira string e sum_two para a segunda)
-# se os valores de sum_one e sum_two forem iguais,
+# (sum_one para a primeira string e sum_two para a segunda).
+# Se os valores de sum_one e sum_two forem iguais,
 # as strings são anagramas (retorna True),
 # se o valor não for o mesmo é porque
 # as strings não são anagramas (retorna False)
