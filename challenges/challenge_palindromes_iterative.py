@@ -1,10 +1,12 @@
 def is_palindrome_iterative(word):
-    if word == "":
+    if not word:
         return False
 
-    aux = ""
+    if word == word[::1]:
+        return True
+    else:
+        return False
 
-    for item in word[::-1]:
-        aux += item
+word = "AGUAs"
 
-    return word == aux
+print(word[::1])
