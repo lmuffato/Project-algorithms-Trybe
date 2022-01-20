@@ -21,7 +21,7 @@ def aux_check(left, right, merged):
 def anagrama_check(array):
     if len(array) <= 1:
         return array
-    
+
     meio = len(array) // 2
 
     left, right = anagrama_check(array[:meio]), anagrama_check(array[meio:])
@@ -29,4 +29,6 @@ def anagrama_check(array):
 
 
 def is_anagram(first_string, second_string):
-    return anagrama_check(list(first_string)) == anagrama_check(list(second_string))
+    word1 = first_string
+    word2 = second_string
+    return anagrama_check(list(word1)) == anagrama_check(list(word2))
