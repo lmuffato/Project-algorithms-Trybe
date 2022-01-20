@@ -1,3 +1,4 @@
+from string import ascii_lowercase as letters
 # Anotações para referências futuras --
 # Duas abordagens para resolver esse problema:
 

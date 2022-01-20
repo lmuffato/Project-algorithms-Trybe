@@ -29,15 +29,27 @@ def get_num_prime(num):
         return num**2 + num + 42
 
 
+# Source (binary_search):
+#  Conteúdo do course, bloco 35
+def binary_search(lista, low_index, high_index, target):
+    if high_index < low_index:
+        return False
+    average_index = (high_index + low_index) // 2
+
+    if lista[average_index] == target:
+        return average_index
+    elif lista[average_index] > target:
+        return binary_search(lista, low_index, average_index - 1, target)
+    else:
+        return binary_search(lista, average_index + 1, high_index, target)
+
+
 def convert_letter_to_prime(letter):
     primes_nums = []
     num = 0
-
-    for index in range(0, len(letters)):
-        for char in letter:
-            if char == letters[index]:
-                num = get_num_prime(index + 1)
-                primes_nums.append(num)
+    for char in letter:
+        num = binary_search(letters, 0, len(letters), char)
+        primes_nums.append(num)
     return primes_nums
 
 
