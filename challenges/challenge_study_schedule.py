@@ -3,11 +3,11 @@ def study_schedule(permanence_period, target_time):
     if target_time is None:
         return None
     counter = 0
+
     for period in permanence_period:
-        if type(period[0]) == int and type(period[1]) == int:
+        try:
             if period[0] <= target_time <= period[1]:
                 counter += 1
-        else:
+        except TypeError:
             return None
-            break
     return counter
