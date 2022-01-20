@@ -8,6 +8,7 @@ def sort_array(param):
         array[minimo], array[i] = array[i], array[minimo]
     return "".join(array)
 
+
 def is_anagram(first_string, second_string):
     """ Faça o código aqui. """
     if first_string == "" or second_string == "":
