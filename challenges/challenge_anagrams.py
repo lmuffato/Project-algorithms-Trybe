@@ -1,31 +1,3 @@
-# def list_words(words):
-#     new_list = []
-
-#     for element in words:
-#         new_list.append(element)
-#     return new_list
-
-# def anagrama_check(array):
-#     for i in range(len(array)):
-#         value = array[i]
-#         position = i
-
-#         while (position > 0 and array[position - 1] > value):
-#             array[position] = array[position - 1]
-#             position = position - 1
-#         array[position] = value
-#     return array
-
-# def anagrama_check(array):
-#     for i in range(len(array)):
-#         min = i
-#         for j in range(i + 1, len(array)):
-#             if array[j] < array[min]:
-#                 min = j
-#         array[min], array[i] = array[i], array[min]
-#     return array
-
-
 def aux_check(left, right, merged):
     left_cursor, right_cursor = 0, 0
 
@@ -44,7 +16,8 @@ def aux_check(left, right, merged):
         merged[left_cursor + right_cursor] = right[right_cursor]
     
     return merged
-        
+
+
 
 def anagrama_check(array):
     if len(array) <= 1:
@@ -57,9 +30,6 @@ def anagrama_check(array):
     
 
 def is_anagram(first_string, second_string):
-    # first_world = list_words(first_string)
-    # second_world = list_words(second_string)
-
     return anagrama_check(list(first_string)) == anagrama_check(list(second_string))
        
 
