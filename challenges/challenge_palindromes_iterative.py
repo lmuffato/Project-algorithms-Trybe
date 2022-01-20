@@ -1,5 +1,4 @@
-
-# Mesma lógica para reverter a string. 
+# Mesma lógica para reverter a string.
 # Funciona, mas ultrapassa o tempo de execução
 def test_each_char_in_word(word):
     key = len(word) - 1
@@ -19,8 +18,8 @@ def is_palindrome_iterative(word):
             return True
         return False
     return False
-# Splicing:
+# Slicing:
 # Referência consultada:
 # https://www.oreilly.com/content/how-do-i-use-the-slice-notation-in-python/
-# Exemplo 4: 
+# Exemplo 4:
 # https://python-reference.readthedocs.io/en/latest/docs/brackets/slicing.html
