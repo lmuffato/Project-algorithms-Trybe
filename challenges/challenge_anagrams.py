@@ -4,10 +4,10 @@ def is_anagram(first_string, second_string):
     list_second_string = list(second_string)
     return merge_sort(list_first_string) == merge_sort(list_second_string)
 
+
 def merge_sort(array):
     if len(array) <= 1:
         return array
-
 
     mid = len(array) // 2
     left = merge_sort(array[:mid])
