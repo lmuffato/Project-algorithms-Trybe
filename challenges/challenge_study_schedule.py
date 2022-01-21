@@ -5,14 +5,9 @@ def study_schedule(permanence_period, target_time):
         end = period[1]
         begin = period[0]
 
-        if(target_time == None):
+        if(target_time == None or end == None or begin == None):
             return None
-
-        if(end == None):
-            return None
-        elif(begin == None):
-            return None
-
+        
         if(end == target_time):
             counter += 1
         elif(begin == target_time):
