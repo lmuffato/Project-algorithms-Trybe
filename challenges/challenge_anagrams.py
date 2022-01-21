@@ -1,6 +1,7 @@
 # Tentativa #1 - Passando somente 2/4 dos testes
 
 def is_anagram(first_string, second_string):
+    """ Faça o código aqui. """
     if (not first_string or not second_string):
         return False
 
