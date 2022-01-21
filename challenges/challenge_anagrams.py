@@ -30,6 +30,8 @@ def merge(left, right, merged):
 
 
 # https://app.betrybe.com/course/computer-science/algoritmos/algoritmos-de-ordenacao-e-busca/29521083-44ea-488d-a74d-216b1ac79b04/conteudos/118f97fe-3cc2-4468-a14c-ca8c341cadc2/algoritmos-de-ordenacao/a3ba0c1f-1835-4956-ba4a-42f376d3d555?use_case=side_bar
+# https://dev.to/clarkj99/breaking-the-palindrome-checker-algorithm-953
+# Utilizado para auxiliar na lógica
 
 def is_anagram(first_string, second_string):
     first_string_arr = [i for i in first_string]
