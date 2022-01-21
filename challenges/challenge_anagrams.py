@@ -16,7 +16,4 @@ def is_anagram(first_string, second_string):
                 second_list.pop(indexOf(second_list, second_letter))
                 counter += 1
 
-    if counter == len(first_string):
-        return True
-
-    return False
+    return counter == len(first_string)
