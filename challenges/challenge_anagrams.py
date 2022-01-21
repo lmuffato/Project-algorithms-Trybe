@@ -1,10 +1,11 @@
 # O algoritmo de ordenação usado no método sort_string é o Quick sort.
-# Nele determinamos um pivô e separamos todos os elementos
+# Nele, determinamos um pivô e separamos todos os elementos
 #  maiores e menores que ele.
 # Assim, obtemos a quantidade exata de elementos maiores e menores que o pivô,
 # o que determina a sua posição correta.
 # A partir daí, seguimos a mesma lógica e aplicamos a recursividade
-# nas subpartes maior e menor para aplicar o mesmo oredenamento.
+# nas subpartes maior e menor para aplicar o mesmo oredenamento,
+# até não haver mais elementos nessas subpartes.
 # https://www.delftstack.com/pt/howto/python/quicksort-python/
 
 def sort_string(string):
