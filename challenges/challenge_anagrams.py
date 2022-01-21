@@ -1,3 +1,6 @@
+#https://www.globalnerdy.com/2020/06/10/programmer-interview-challenge-1-anagram/
+
+
 def selection_sort(word):
     array = list(word)
     for index in range(len(array)):
@@ -8,6 +11,7 @@ def selection_sort(word):
         array[minimum], array[index] = array[index], array[minimum]
 
     return array
+
 
 def is_anagram(first_string, second_string):
     """ Faça o código aqui. """
