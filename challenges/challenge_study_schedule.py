@@ -1,3 +1,23 @@
 def study_schedule(permanence_period, target_time):
-    """ Faça o código aqui. """
-    """ inicio projeto"""
+    counter = 0
+    
+    for period in permanence_period:
+        end = period[1]
+        begin = period[0]
+
+        if(target_time == None):
+            return None
+
+        if(end == None):
+            return None
+        elif(begin == None):
+            return None
+
+        if(end == target_time):
+            counter += 1
+        elif(begin == target_time):
+            counter += 1
+        elif((end - begin) >= target_time and begin < target_time ):
+            counter += 1
+
+    return counter
