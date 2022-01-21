@@ -1,11 +1,12 @@
 def study_schedule(permanence_period, target_time):
-    """Faça o código aqui."""
-    if type(target_time) != int:
+    if not target_time:
         return None
 
     hit_target = 0
-    for tupla in range(len(permanence_period)):
-        if target_time >= tupla[0] or target_time >= tupla[1]:
+    for tupla in permanence_period:
+        if tupla[0] is None or tupla[1] is None:
+            return None
+        elif tupla[0] <= target_time <= tupla[1]:
             hit_target += 1
 
     return hit_target
