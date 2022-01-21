@@ -1,3 +1,7 @@
+# Fonte de referencia algoritimo de ordenação
+# https://stackabuse.com/sorting-algorithms-in-python/
+
+
 def sortList(array):
     length = len(array)
 
