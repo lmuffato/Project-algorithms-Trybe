@@ -4,7 +4,8 @@
 # Assim, obtemos a quantidade exata de elementos maiores e menores que o pivô,
 # o que determina a sua posição correta.
 # A partir daí, seguimos a mesma lógica e aplicamos a recursividade
-# nas subpartes maior e menor para aplicar o mesmo oredenamento.
+# nas subpartes maior e menor para aplicar o mesmo oredenamento,
+# até não haver mais elementos nessas subpartes.
 # https://www.delftstack.com/pt/howto/python/quicksort-python/
 
 def sort_string(string):
