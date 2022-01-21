@@ -4,6 +4,7 @@ def reversed_word(list):
     else:
         return reversed_word(list[1:]) + [list[0]]
 
+
 def is_palindrome_recursive(word, low_index, high_index):
     if word == "":
         return False
