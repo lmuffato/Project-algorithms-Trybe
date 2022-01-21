@@ -22,3 +22,9 @@ def is_anagram(first_string, second_string):
     if first == second:
         return True
     return False
+
+
+"""
+https://www.geeksforgeeks.org/python-program-to-sort-a-string/
+foi usado a seguinte referência
+"""
