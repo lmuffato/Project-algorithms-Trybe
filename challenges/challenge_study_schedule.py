@@ -1,5 +1,5 @@
 def study_schedule(permanence_period, target_time):
-    if target_time == None:
+    if target_time is None:
         return None
     present_students = 0
     for time_student_tuple in permanence_period:
