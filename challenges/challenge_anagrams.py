@@ -48,8 +48,8 @@ def is_anagram(first_string, second_string):
     str2 = [*second_string]
     output = True
 
-    custom_sort(str1)
-    custom_sort(str2)
+    merge_sort(str1)
+    merge_sort(str2)
 
     for x, y in zip(str1, str2):
       output = output and (x == y)
