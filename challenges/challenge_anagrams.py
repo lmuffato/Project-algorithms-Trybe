@@ -53,7 +53,6 @@ def merge(left, right, merged):
     return merged
 
 
-
 def is_anagram(first_string, second_string):
     if second_string == "" or second_string == "":
         return False
