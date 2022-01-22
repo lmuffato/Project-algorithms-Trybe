@@ -9,4 +9,6 @@ def study_schedule(permanence_period, target_time):
         if (time[0] <= target_time <= time[1]):
             students += 1
     return students
+
+    
 #requisito realizado com ajuda do colega Carlos Sá - Turma 10A
