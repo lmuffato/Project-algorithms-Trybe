@@ -1,14 +1,15 @@
 def is_palindrome_iterative(word):
-    if(len(word) == 0): return False
+    if(len(word) == 0):
+        return False
     li = 0
     hi = len(word)-1
     output = True
-    while(li!=hi):
-      output = True and (word[li] == word[hi])
-      li +=1
-      hi -=1
-      if(li>hi):
-        break
+    while(li != hi):
+        output = True and (word[li] == word[hi])
+        li += 1
+        hi -= 1
+        if(li > hi):
+            break
     return output
 
 # print(is_palindrome_recursive("ANA", 0, 2))

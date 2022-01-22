@@ -1,12 +1,13 @@
 def is_palindrome_recursive(word, low_index, high_index):
-    if(word==''): return False
+    if(word == ''):
+        return False
 
     output = True and (word[low_index] == word[high_index])
-    low_index +=1
-    high_index -=1
+    low_index += 1
+    high_index -= 1
 
-    if(low_index>high_index or low_index==high_index):
-      return output
+    if(low_index > high_index or low_index == high_index):
+        return output
 
     return is_palindrome_recursive(word, low_index, high_index)
 
