@@ -1,8 +1,12 @@
 def is_palindrome_recursive(word, low_index, high_index):
-    """ Faça o código aqui. """
+    """Faça o código aqui."""
     if word == "":
         return False
-    if (low_index == high_index and word[low_index] == word[high_index] or high_index == 1):
+    if (
+        low_index == high_index
+        and word[low_index] == word[high_index]
+        or high_index == 1
+    ):
         return True
     elif word[low_index] == word[high_index]:
         return is_palindrome_recursive(word, low_index + 1, high_index - 1)
