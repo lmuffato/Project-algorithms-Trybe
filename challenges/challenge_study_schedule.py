@@ -1,13 +1,12 @@
 def study_schedule(permanence_period, target_time):
     try:
         count = 0
-        target_time > 0
         for pp in permanence_period:
-            if target_time in range(pp[0], pp[1]+1):
+            if target_time >= pp[0] and target_time <= pp[1]:
                 count += 1
+        return count
     except Exception:
         return None
-    return count
 
 
 """ def study_schedule(permanence_period, target_time):
