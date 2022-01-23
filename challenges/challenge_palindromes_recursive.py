@@ -11,4 +11,5 @@ def is_palindrome_recursive(word, low_index, high_index):
     return True
 
 
-# Requisito realizado com ajuda de Marília - Turma 10A e https://stackoverflow.com/questions/952110/recursive-function-palindrome-in-python    
+# Requisito realizado com ajuda de Marília - Turma 10A
+# https://stackoverflow.com/questions/952110/recursive-function-palindrome-in-python
