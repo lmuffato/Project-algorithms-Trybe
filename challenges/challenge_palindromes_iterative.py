@@ -1,7 +1,7 @@
 def is_palindrome_iterative(word):
     if word:
         reverse_word = word[::-1]
-        return True if ("".join(reverse_word) == word) else False
+        return True if (reverse_word == word) else False
 
     return False
 
