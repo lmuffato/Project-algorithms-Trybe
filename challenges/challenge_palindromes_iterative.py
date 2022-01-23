@@ -1,12 +1,18 @@
 def is_palindrome_iterative(word):
     if word:
-        result = True
+        reverse_index = len(word) - 1
+        reverse_word = []
 
-        for i in range(len(word) // 2):
-            result = False
-            if word[i] == word[len(word) - (i + 1)]:
-                result = True
+        while reverse_index >= 0:
+            reverse_word.append(word[reverse_index])
+            reverse_index -= 1
 
-        return result
+        return True if ("".join(reverse_word) == word) else False
 
     return False
+
+
+# revertendo listas
+# https://www.delftstack.com/pt/howto/python/python-reverse-a-list/
+
+# print(is_palindrome_iterative("ama"))
