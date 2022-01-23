@@ -1,13 +1,10 @@
 def is_palindrome_iterative(word):
-    if len(word) > 0:
-
-        comparison_position = 0
+    if word:
         result = True
 
         for i in range(len(word) // 2):
-            comparison_position += 1
             result = False
-            if word[i] == word[len(word) - comparison_position]:
+            if word[i] == word[len(word) - (i + 1)]:
                 result = True
 
         return result
