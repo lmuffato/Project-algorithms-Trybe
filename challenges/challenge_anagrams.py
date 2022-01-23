@@ -1,11 +1,11 @@
 def sorted_by_hand(string):
     word_list = list(string)
     for index_1 in range(len(word_list)):
-        minimum = index_1
+        m = index_1
         for index_2 in range(index_1 + 1, len(word_list)):
-            if word_list[index_2] < word_list[minimum]:
-                minimum = index_2
-        word_list[minimum], word_list[index_1] = word_list[index_1], word_list[minimum]
+            if word_list[index_2] < word_list[m]:
+                m = index_2
+        word_list[m], word_list[index_1] = word_list[index_1], word_list[m]
 
     return word_list
 
@@ -22,3 +22,4 @@ def is_anagram(first_string, second_string):
 
 # https://www.youtube.com/watch?v=t18nWQW8Hbc
 # https://stackoverflow.com/questions/48217471/is-it-possible-to-check-for-anagram-without-using-sorted-or-dictionary-that-pe
+# https://codescracker.com/python/program/python-check-anagram-string.htm
