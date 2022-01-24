@@ -1,5 +1,6 @@
 import math
 
+
 def is_palindrome_recursive(word, low_index, high_index):
     if word == "":
         return False
@@ -8,4 +9,3 @@ def is_palindrome_recursive(word, low_index, high_index):
     if math.ceil(len(word)/2) == high_index:
         return True
     return is_palindrome_recursive(word, low_index + 1, high_index - 1)
-
