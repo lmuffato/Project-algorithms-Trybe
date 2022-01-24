@@ -1,6 +1,6 @@
 def study_schedule(permanence_period, target_time):
     n_estudantes = 0
-    if target_time == '':
+    if target_time == None:
         return None
     for student in permanence_period:
         if type(student[0]) != int or type(student[1]) != int:
