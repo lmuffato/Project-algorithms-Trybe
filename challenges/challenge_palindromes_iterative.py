@@ -3,14 +3,14 @@
 
 def is_palindrome_iterative(word):
     """ Faça o código aqui. """
-    length = len(word)
+    # length = len(word)
 
-    if length < 2:
-        return True
+    # if length < 2:
+    #     return True
 
-    elif word[0] == word[length - 1]:
+    # elif word[0] == word[length - 1]:
 
-        return is_palindrome_iterative(word[1 : length - 1])
+    #     return is_palindrome_iterative(word[1 : length - 1])
 
-    else:
-        return False
+    # else:
+    #     return False
