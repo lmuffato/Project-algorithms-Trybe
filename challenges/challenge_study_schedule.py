@@ -1,6 +1,6 @@
 def study_schedule(permanence_period, target_time):
     period_sum = 0
-    
+
     if(type(target_time) != int):
         return None
     for student in permanence_period:
@@ -11,4 +11,3 @@ def study_schedule(permanence_period, target_time):
             return None
 
     return period_sum
-    
