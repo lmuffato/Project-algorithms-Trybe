@@ -1,5 +1,5 @@
 def alfabeth_list(string):
-    new_list=[]
+    new_list = []
     chars = list(string)
     while chars:
         lower_char = chars[0]

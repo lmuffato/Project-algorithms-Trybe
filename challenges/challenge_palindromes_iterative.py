@@ -14,7 +14,3 @@ def is_palindrome_iterative(word):
         return True
     except KeyError:
         raise False
-    
-
-# print(is_palindrome_recursive("racecar", 0, 6))
-
