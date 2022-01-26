@@ -19,6 +19,7 @@ def sort_string(string):
             equal.append(char)
     return sort_string(left) + equal + sort_string(greater)
 
+
 def is_anagram(first_string, second_string):
     if len(second_string) == 0 or len(first_string) == 0:
         return False
