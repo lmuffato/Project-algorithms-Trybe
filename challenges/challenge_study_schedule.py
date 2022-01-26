@@ -1,5 +1,3 @@
-
-
 def study_schedule(permanence_period, target_time):
     try:
         students = 0
