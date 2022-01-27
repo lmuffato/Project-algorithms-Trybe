@@ -1,14 +1,11 @@
-def sort_string(string):
-    new_string = list(string)
-    for i in range(len(string)):
-        cur_value = string[i]
-        cur_position = i
-        while cur_position > 0 and new_string[cur_position - 1] > cur_value:
-            new_string[cur_position] = new_string[cur_position - 1]
-            cur_position = cur_position - 1
-
-        new_string[cur_position] = cur_value
-    return new_string
+def sort_string(lst):
+    if not lst:
+        return []
+    return (
+        sort_string([x for x in lst[1:] if x < lst[0]])
+        + [lst[0]]
+        + sort_string([x for x in lst[1:] if x >= lst[0]])
+    )
 
 
 def is_anagram(first_string, second_string):
@@ -16,8 +13,8 @@ def is_anagram(first_string, second_string):
     if len(first_string) != len(second_string):
         return False
     else:
-        first_string = sort_string(first_string)
-        second_string = sort_string(second_string)
+        first_string = sort_string(list(first_string))
+        second_string = sort_string(list(second_string))
 
     if first_string == second_string:
         return True
