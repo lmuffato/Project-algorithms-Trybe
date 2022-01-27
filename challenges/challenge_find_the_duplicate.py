@@ -1,26 +1,12 @@
 def find_duplicate(nums):
     """ Faça o código aqui. """
-    has_duplicated = False
-
-    # armazena o número de iterações para evitar
-    # a iteração sobre índices já ordenados
-    num_of_iterations = 0
-
-    # Enquanto ainda não está ordenado (ocorreram trocas na iteração)
-    while not has_duplicated:
-        has_duplicated = False
-
-        # percorra o array até o ultimo índice
-        for i in range(len(nums) - num_of_iterations - 1):
-            if int(all(nums)) or nums[i] < 0:
-
-                # caso a posição corrente seja maior que a posterior
-                if nums[i] == nums[i + 1]:
-                    has_duplicated = True
+    # percorra o array até o ultimo índice e dentro do mesmo
+    for i in range(len(nums)):
+        for j in range(len(nums)):
+            # verifica se não esta comparando mesmo indice
+            # verifica se são iguais
+            if i != j and nums[i] == nums[j]:
+                # verifica se é positivo
+                if nums[i] > 0:
                     return nums[i]
-            else:
-                return False
-
-        num_of_iterations += 1
-
-        return has_duplicated
+    return False
