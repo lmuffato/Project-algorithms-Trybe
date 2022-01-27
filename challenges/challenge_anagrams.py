@@ -19,7 +19,7 @@ def is_anagram(first_string, second_string):
         first_string = sort_string(first_string)
         second_string = sort_string(second_string)
 
-    for i in range(len(first_string)):
-        if first_string[i] != second_string[i]:
-            return False
-    return True
+    if first_string == second_string:
+        return True
+    else:
+        return False
