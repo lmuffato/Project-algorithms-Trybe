@@ -14,7 +14,7 @@ def partition(word, low, high):
         i = i + 1
         j = j - 1
     word[i], word[high] = word[high], word[i]
-    return i    
+    return i
 
 
 def quick_sort(word, low, high):
