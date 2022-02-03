@@ -1,2 +1,11 @@
 def find_duplicate(nums):
-    """ Faça o código aqui. """
+    duplicated = None
+    passed = set()
+
+    for num in nums:
+        if num in passed:
+            duplicated = num
+        else:
+            passed.add(num)
+
+    return duplicated
