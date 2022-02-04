@@ -1,23 +1,17 @@
-def test_nums(nums):
-    if nums == str or len(nums) == 0:
+def find_duplicate(nums):
+    if len(nums) == 0:
         return False
 
-    return True
+    duplicated = None
+    already_passed = set()
 
+    for num in nums:
+        if num in already_passed:
+            duplicated = num
+        else:
+            already_passed.add(num)
 
-def find_duplicate(nums):
-    if test_nums(nums):
+    if not duplicated:
+        return False
 
-        duplicated = None
-        passed = set()
-
-        for num in nums:
-            if num in passed:
-                duplicated = num
-            else:
-                passed.add(num)
-
-        if not duplicated:
-            return False
-
-        return duplicated
+    return duplicated
