@@ -1,9 +1,9 @@
 def validate_permanence_period(permanence_period):
 
     for element in permanence_period:
-        if type(element[0]) != int:
+        if type(element[0]) is not int:
             return None
-        if type(element[1]) != int:
+        if type(element[1]) is not int:
             return None
 
     return True
