@@ -1,33 +1,24 @@
-def validate_permanence_period(permanence_period):
+def validate_permanence_period(element):
 
-    for element in permanence_period:
-        if type(element[0]) is not int:
-            return None
-        if type(element[1]) is not int:
-            return None
-
-    return True
-
-
-def validate_target_time(target_time):
-    if not target_time:
-        return None
+    if type(element[0]) is not int:
+        return False
+    if type(element[1]) is not int:
+        return False
 
     return True
 
 
 def study_schedule(permanence_period, target_time):
 
-    if (
-        validate_permanence_period(permanence_period)
-        and validate_target_time(target_time)
-    ):
-        counter = 0
+    if not target_time:
+        return None
 
-        for element in permanence_period:
-            if element[0] == target_time:
-                counter += 1
-            if element[1] == target_time:
-                counter += 1
+    counter = 0
 
-        return counter
+    for element in permanence_period:
+        if not validate_permanence_period(element):
+            return None
+        if element[0] <= target_time <= element[1]:
+            counter += 1
+
+    return counter
