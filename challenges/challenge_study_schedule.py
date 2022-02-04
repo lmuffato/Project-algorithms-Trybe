@@ -9,7 +9,7 @@ def validate_permanence_period(element):
 
 
 def study_schedule(permanence_period, target_time):
-
+    # resolvido com ajuda do colega Gustavo
     if not target_time:
         return None
 
