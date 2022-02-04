@@ -1,6 +1,6 @@
 def test_nums(nums):
-    if len(nums) == 1:
-        return None
+    if nums == str or len(nums) == 0:
+        return False
 
     return True
 
