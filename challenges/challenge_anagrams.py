@@ -1,31 +1,6 @@
-# def is_anagram(first_string, second_string):
-#     if not first_string or second_string:
-#         return False
-
-#     caracters_list = list(second_string)
-#     position_string_1 = 0
-#     is_an_anagram = True
-
-#     while position_string_1 < len(first_string) and is_an_anagram:
-#         position_string_2 = 0
-#         found = False
-#         while position_string_2 < len(caracters_list) and not found:
-#             if first_string[position_string_1] == caracters_list[position_string_2]:
-#                 found = True
-#             else:
-#                 position_string_2 += 1
-
-#         if found:
-#             caracters_list[position_string_2] = None
-#         else:
-#             is_an_anagram = False
-
-#         position_string_1 += 1
-
-#     return is_an_anagram
-
-
 # REF: https://github.com/tryber/sd-010-a-project-algorithms/pull/62/files
+
+
 def merge_sort(array):
     if len(array) <= 1:
         return array
