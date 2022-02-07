@@ -7,4 +7,3 @@ def find_duplicate(nums):
             return nums[index]
 
     return False
-
