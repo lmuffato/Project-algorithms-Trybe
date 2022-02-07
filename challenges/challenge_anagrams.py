@@ -33,4 +33,3 @@ def is_anagram(first_string, second_string):
     word_1 = merge_sort(list(first_string))
     word_2 = merge_sort(list(second_string))
     return word_1 == word_2
-
