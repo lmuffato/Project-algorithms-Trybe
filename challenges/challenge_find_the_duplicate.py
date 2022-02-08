@@ -27,5 +27,3 @@ def find_duplicate(nums):
             result = ordered_nums[i]
             return result
     return result
-
-    
