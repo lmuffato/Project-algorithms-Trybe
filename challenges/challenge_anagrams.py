@@ -1,9 +1,15 @@
+def combine(numbers, start, aux):
+    for i in range(len(aux)):
+        numbers[start + i] = aux[i]
+
+
 def merge_sort(numbers, start, end):
     if start < end:
         middle = (start + end) // 2
         merge_sort(numbers, start, middle)
         merge_sort(numbers, middle + 1, end)
-        merge(numbers, start, middle, end)
+        combine(numbers, start, merge(numbers, start, middle, end))
+
 
 def merge(numbers, start, middle, end):
     start1 = start
@@ -24,8 +30,8 @@ def merge(numbers, start, middle, end):
     while (start2 <= end):
         aux.append(numbers[start2])
         start2 += 1
-    for i in range(len(aux)):
-        numbers[start + i] = aux[i]
+    return aux
+
 
 def order_string(string):
     string_array = list(string)
@@ -36,6 +42,7 @@ def order_string(string):
     ordered = ''.join(string_array)
 
     return ordered.lower()
+
 
 def is_anagram(first_string, second_string):
     first_ordered = order_string(first_string)
