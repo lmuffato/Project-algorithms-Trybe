@@ -8,4 +8,3 @@ def find_duplicate(nums):
     return False
 
 # Ref:https://www.w3schools.com/python/ref_list_count.asp
-
