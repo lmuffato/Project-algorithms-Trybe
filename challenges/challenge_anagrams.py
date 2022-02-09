@@ -1,35 +1,13 @@
-def mergeSort(list):
-    # https://panda.ime.usp.br/panda/static/pythonds_pt/05-OrdenacaoBusca/OMergeSort.html
+def sort_string(list):
+    for index in range(1, len(list)):
+        current_char = list[index]
+        i = index - 1
 
-    if len(list) > 1:
-        mid = len(list)//2
-        lefthalf = list[:mid]
-        righthalf = list[mid:]
+        while i >= 0 and current_char < list[i]:
+            list[i + 1] = list[i]
+            i -= 1
 
-        mergeSort(lefthalf)
-        mergeSort(righthalf)
-
-        i = 0
-        j = 0
-        k = 0
-        while i < len(lefthalf) and j < len(righthalf):
-            if lefthalf[i] < righthalf[j]:
-                list[k] = lefthalf[i]
-                i = i+1
-            else:
-                list[k] = righthalf[j]
-                j = j+1
-            k = k+1
-
-        while i < len(lefthalf):
-            list[k] = lefthalf[i]
-            i = i+1
-            k = k+1
-
-        while j < len(righthalf):
-            list[k] = righthalf[j]
-            j = j+1
-            k = k+1
+        list[i + 1] = current_char
 
     return list
 
@@ -40,7 +18,7 @@ def is_anagram(first_string, second_string):
     if len(first_string) != len(second_string):
         return False
 
-    first_string = mergeSort(list(first_string))
-    second_string = mergeSort(list(second_string))
+    first_string = sort_string(list(first_string))
+    second_string = sort_string(list(second_string))
 
     return ''.join(first_string) == ''.join(second_string)
