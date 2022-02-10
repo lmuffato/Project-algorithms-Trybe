@@ -15,3 +15,7 @@ def study_schedule(permanence_period, target_time):
             if session[0] <= target_time <= session[1]:
                 qty += 1
     return qty
+
+
+# aparentemente, o nome menor da variável influenciou
+# no tempo de execução do algoritmo (?)
