@@ -3,7 +3,7 @@ def study_schedule(permanence_period, target_time):
     if target_time is None:
         return None
     else:
-        logged_students = 0
+        qty = 0
         for session in permanence_period:
             # all() Retorna `True` se todos os elementos do iterável forem
             # verdadeiros (ou se o iterável for vazio). Ou seja, a função
@@ -13,5 +13,5 @@ def study_schedule(permanence_period, target_time):
             if not all(session):
                 return None
             if session[0] <= target_time <= session[1]:
-                logged_students += 1
-    return logged_students
+                qty += 1
+    return qty
