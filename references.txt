@@ -1,0 +1,5 @@
+Projeto baseado nos seguintes PRs:
+
+https://github.com/tryber/sd-010-a-project-algorithms/pull/93
+https://github.com/tryber/sd-010-a-project-algorithms/pull/91
+https://github.com/tryber/sd-010-a-project-algorithms/pull/96
