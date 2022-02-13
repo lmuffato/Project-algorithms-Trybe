@@ -5,7 +5,9 @@ def is_palindrome_iterative(word):
     for gokuSsj2 in word:
         palindrom.append(gokuSsj2)
 
-        if "".join(palindrom) == word:
-            return True
-        else:
-            return False
+    palindrom.reverse()
+
+    if "".join(palindrom) == word:
+        return True
+    else:
+        return False

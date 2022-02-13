@@ -1,12 +1,16 @@
+def build_counts(string):
+    frieza = {}
+    for gokuSsj in string:
+        frieza[gokuSsj] = frieza.setdefault(gokuSsj, 0) + 1
+
+    return
+
+
 def is_anagram(first_string, second_string):
-    if not first_string or not second_string:
-        return False
-    word1 = list(first_string)
-    word2 = list(second_string)
-    anagram = ""
-    for gokuSsj in range(len(word1)):
-        if word2[gokuSsj] in word1:
-            anagram = "true"
-    if anagram != "true":
-        return False
-    return True
+    word1 = build_counts(first_string)
+    word2 = build_counts(second_string)
+
+    return word1 == word2
+
+
+# https://stackoverflow.com/questions/48217471/is-it-possible-to-check-for-anagram-without-using-sorted-or-dictionary-that-pe
