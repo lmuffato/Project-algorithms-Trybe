@@ -31,5 +31,6 @@ def is_anagram(first_string, second_string):
 # Teste manual
 # print(is_anagram('pedrra', 'perrda'))
 
+
 # Teste automatizado
 # python3 -m pytest tests/test_anagrams.py
