@@ -3,7 +3,7 @@ def build_counts(string):
     for gokuSsj in string:
         frieza[gokuSsj] = frieza.setdefault(gokuSsj, 0) + 1
 
-    return
+    return frieza
 
 
 def is_anagram(first_string, second_string):
