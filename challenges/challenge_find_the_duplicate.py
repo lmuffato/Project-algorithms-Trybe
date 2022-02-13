@@ -1,5 +1,6 @@
 from challenges.challenge_anagrams import merge_sort
 
+
 def find_duplicate(nums):
     start = 0
     end = len(nums) - 1
