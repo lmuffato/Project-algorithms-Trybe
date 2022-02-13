@@ -7,6 +7,7 @@ def sort_string(string):
         string = string.replace(min(string), '', 1)
     return text
 
+
 def is_anagram(first_string, second_string):
     # no caso dos parametros não existirem
     if not first_string or not first_string:
@@ -14,10 +15,10 @@ def is_anagram(first_string, second_string):
 
     if len(first_string) != len(second_string):
         return False
-        
+
     string_sorted_01 = sort_string(first_string)
     string_sorted_02 = sort_string(second_string)
-    
+
     index = 0
 
     while index < len(string_sorted_01):
